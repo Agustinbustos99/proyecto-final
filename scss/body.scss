@@ -1,0 +1,86 @@
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  .bio,
+  .imagen {
+    display: flex;
+    align-items: center;
+
+    .imagen img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .img-small {
+      width: 50%;
+    }
+  }
+
+  .ju,
+  p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: black;
+    color: red;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+
+  .hist,
+  .his1 {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .ju,
+    p {
+      width: 100%;
+      margin: 10px auto;
+      font-size: 14px;
+    }
+
+    .hist,
+    .his1 {
+      font-size: 14px;
+    }
+  }
+}
+
+.bo {
+  background-color: gray;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.navbar-collapse {
+  background-color: gray;
+}

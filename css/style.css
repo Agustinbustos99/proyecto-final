@@ -1,68 +1,69 @@
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 40px;
-  max-width: 800px;
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
   margin: 0 auto; }
-  .container .bio,
-  .container .imagen {
-    display: flex;
-    align-items: center; }
-  .container .imagen img {
-    border: 10px solid #333;
-    padding: 20px;
-    background-color: #0c0909;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #f76060;
-    width: 50%;
+
+.container .bio,
+.container .imagen {
+  display: flex;
+  align-items: center; }
+  .container .bio .imagen img,
+  .container .imagen .imagen img {
     max-width: 100%;
     height: auto; }
-  .container .logo img {
-    border: 10px solid #333;
-    padding: 20px;
-    background-color: #0c0909;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #f76060;
-    width: 50%;
-    max-width: 50%;
+  .container .bio .logo img,
+  .container .imagen .logo img {
+    max-width: 100%;
     height: auto; }
+  .container .bio .img-small,
+  .container .imagen .img-small {
+    width: 50%; }
+
+.container .ju,
+.container p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  background-color: black;
+  color: red;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0; }
+
+.container .hist,
+.container .his1 {
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 16px; }
+
+@media screen and (max-width: 1023px) {
   .container .ju,
   .container p {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 10px solid #333;
-    padding: 20px;
-    background-color: #0c0909;
     width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #f76060;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 5px; }
+    margin: 10px auto;
+    font-size: 14px; }
   .container .hist,
   .container .his1 {
-    border: 10px solid #333;
-    padding: 20px;
-    background-color: #0c0909;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #f76060;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 5px; }
-  @media screen and (max-width: 1023px) {
-    .container .ju,
-    .container p {
-      width: 100%;
-      margin: 10px auto; } }
+    font-size: 14px; } }
 
-body {
-  background-color: gray;
-  text-align: center;
-  color: red; }
+.bo {
+  background-color: gray; }
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px; }
+
+.navbar-collapse {
+  background-color: gray; }
